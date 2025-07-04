@@ -1,0 +1,15 @@
+@{
+    ViewBag.Title = "Speech Recognition";
+}
+<h2 class="text-primary">Speech to Text</h2>
+
+<form asp-controller="Speech" asp-action="Transcribe" method="post" class="mb-4">
+    <button type="submit" class="btn btn-danger">Start Transcription</button>
+</form>
+
+@if (ViewBag.TranscribedText != null)
+{
+    <div class="alert alert-success">
+        <strong>Text:</strong> @ViewBag.TranscribedText
+    </div>
+}

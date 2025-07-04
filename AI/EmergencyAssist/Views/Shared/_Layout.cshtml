@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Emergency Assist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="/">Emergency Assist</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Speech">Speech</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Emotion">Emotion</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Location">Location</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Report">Report</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Panic">Panic</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Account/Login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Account/Register">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        @RenderBody()
+    </div>
+
+    <footer class="footer bg-light text-center py-3 mt-5">
+        <span>&copy; @DateTime.Now.Year - Emergency Assist</span>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

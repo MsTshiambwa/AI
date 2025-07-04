@@ -1,0 +1,8 @@
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.AssemblyInfo.cs
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.RazorAssemblyInfo.cache
+C:\Users\User\Downloads\AI\EmergencyAssist\obj\Debug\net9.0\EmergencyAssist.RazorAssemblyInfo.cs

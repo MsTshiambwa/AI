@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensure your layout is being used
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary">Welcome, @ViewBag.Username!</h2>
+    <p class="lead">Choose a feature to get started:</p>
+
+    <nav class="nav nav-pills flex-column flex-sm-row mb-4">
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Speech">🎤 Speech</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Emotion">😊 Emotion</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Location">📍 Location</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Report">📝 Report</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/Panic">🚨 Panic</a>
+    </nav>
+</div>

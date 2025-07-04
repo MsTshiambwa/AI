@@ -1,0 +1,18 @@
+@model IEnumerable<EmergencyAssist.Models.Report>
+
+<h2 class="text-danger">Anonymous Reports</h2>
+
+<form asp-action="Submit" method="post" class="mb-4">
+    <div class="form-group">
+        <textarea name="message" class="form-control" rows="4" placeholder="Enter your anonymous report..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-danger mt-2">Submit Report</button>
+</form>
+
+<h4>Past Reports</h4>
+<ul class="list-group">
+    @foreach (var report in Model)
+    {
+        <li class="list-group-item">@report.Message <span class="text-muted float-end">@report.Timestamp</span></li>
+    }
+</ul>

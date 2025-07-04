@@ -1,0 +1,19 @@
+@{
+    ViewBag.Title = "Panic Mode AI";
+}
+<h2 class="text-danger">Emergency AI Assistant</h2>
+
+<form asp-action="AskHelp" method="post">
+    <div class="form-group">
+        <textarea name="message" class="form-control" placeholder="Describe your emergency..." rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-danger mt-2">Ask AI for Help</button>
+</form>
+
+@if (ViewBag.AIResponse != null)
+{
+    <div class="alert alert-info mt-3">
+        <strong>AI Response:</strong>
+        <p>@ViewBag.AIResponse</p>
+    </div>
+}

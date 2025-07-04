@@ -1,0 +1,21 @@
+@{
+    ViewBag.Title = "Your Location";
+}
+<h2 class="text-primary">Find My Address</h2>
+
+<form asp-controller="Location" asp-action="GetAddress" method="post">
+    <input type="hidden" id="latitude" name="latitude" />
+    <input type="hidden" id="longitude" name="longitude" />
+    <button type="submit" class="btn btn-info" onclick="getLocation()">Get My Location</button>
+</form>
+
+@if (ViewBag.Address != null)
+{
+    <div class="alert alert-success mt-3">
+        <strong>Address:</strong> @ViewBag.Address
+    </div>
+}
+
+@section Scripts {
+    <script src="/js/geolocation.js"></script>
+}

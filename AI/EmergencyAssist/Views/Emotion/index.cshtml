@@ -1,0 +1,18 @@
+@{
+    ViewBag.Title = "Emotion Detection";
+}
+<h2 class="text-primary">Detect Emotion</h2>
+
+<form asp-controller="Emotion" asp-action="Detect" method="post" enctype="multipart/form-data">
+    <div class="form-group mb-3">
+        <input type="file" name="image" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-danger">Analyze</button>
+</form>
+
+@if (ViewBag.Emotion != null)
+{
+    <div class="alert alert-info mt-3">
+        <strong>Detected Emotion:</strong> @ViewBag.Emotion
+    </div>
+}
